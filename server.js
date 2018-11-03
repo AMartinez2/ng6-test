@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/dist/ng6-test'));
 app.get('/*', function(req,res) {
 
 //'/dist/<project-name>/index.html'
-res.sendFile(path.join(__dirname+'/dist/ng6-test/index.html'));
+res.sendFile(path.join(__dirname+'/dist/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
