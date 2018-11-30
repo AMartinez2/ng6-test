@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+import { DataService } from './data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +11,8 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { RobotsComponent } from './robots/robots.component';
+import { RobotDetailsComponent } from './robot-details/robot-details.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +20,17 @@ import { HttpClientModule } from '@angular/common/http';
     SidebarComponent,
     PostsComponent,
     UsersComponent,
-    DetailsComponent
+    DetailsComponent,
+    RobotsComponent,
+    RobotDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
