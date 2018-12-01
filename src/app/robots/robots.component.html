@@ -1,0 +1,9 @@
+<h1>Robots</h1>
+<ul>
+  <li *ngFor='let robot of robots$'>
+    <a routerLink="/robotDetails/{{ robot.name }}">{{ robot.name }}</a>
+    <ul>
+      <li><a routerLink="/robotDetails/{{ robot.name }}">${{ robot.price }}</a></li>
+    </ul>
+  </li>
+</ul>

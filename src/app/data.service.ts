@@ -6,6 +6,12 @@ import { HttpClient } from '@angular/common/http';
 export class DataService {
 
   constructor(private http: HttpClient) {  }
+  getRobots() {
+    return this.http.get('https://robot-ms.herokuapp.com/allRobots');
+  }
+  getRobot(name) {
+    return this.http.get('https://robot-ms.herokuapp.com/name/' + name);
+  }
   getUsers() {
     return this.http.get('https://robot-ms.herokuapp.com/allRobots');
   }
