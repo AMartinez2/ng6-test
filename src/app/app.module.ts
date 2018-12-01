@@ -22,7 +22,7 @@ import { RobotDetailsComponent } from './robot-details/robot-details.component';
     PostsComponent,
     UsersComponent,
     DetailsComponent,
-    NavbarComponent
+    NavbarComponent,
     RobotsComponent,
     RobotDetailsComponent
   ],
