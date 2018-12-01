@@ -12,15 +12,11 @@ const routes: Routes = [
     component: UsersComponent
   },
   {
-<<<<<<< HEAD
-    path: 'name/:name',
-=======
     path: 'robots',
     component: RobotsComponent
   },
   {
     path: 'details/:name',
->>>>>>> 18d64f830f371cbc935d23ed2e8bdb44434de4d6
     component: DetailsComponent
   },
   {
