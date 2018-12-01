@@ -12,8 +12,8 @@ export class DataService {
   getRobot(name) {
     return this.http.get('https://robot-ms.herokuapp.com/name/' + name);
   }
-  getUsers() {
-    return this.http.get('https://robot-ms.herokuapp.com/allRobots');
+  getAllUsers() {
+    return this.http.get('https://user-ms-438.herokuapp.com/allUsers');
   }
   getUser(name) {
     return this.http.get('https://robot-ms.herokuapp.com/name/' + name);

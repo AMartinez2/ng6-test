@@ -14,7 +14,6 @@ export class RobotDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.robot.getUser(this.robot$).subscribe( data => this.robot$ = data );
     this.data.getRobot(this.robot$).subscribe(
       data => this.robot$ = data
     );

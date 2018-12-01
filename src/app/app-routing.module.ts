@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { PostsComponent } from './posts/posts.component';
 import { RobotsComponent } from './robots/robots.component';
 import { RobotDetailsComponent } from './robot-details/robot-details.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: UsersComponent
+    component: LoginComponent
   },
   {
-    path: 'robots',
-    component: RobotsComponent
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'details/:name',
@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'posts',
     component: PostsComponent
+  },
+  {
+    path: 'robots',
+    component: RobotsComponent
   }
 ];
 

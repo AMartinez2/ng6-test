@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { DataService } from './data.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostsComponent } from './posts/posts.component';
-import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -19,7 +19,7 @@ import { RobotDetailsComponent } from './robot-details/robot-details.component';
     AppComponent,
     SidebarComponent,
     PostsComponent,
-    UsersComponent,
+    LoginComponent,
     DetailsComponent,
     RobotsComponent,
     RobotDetailsComponent
