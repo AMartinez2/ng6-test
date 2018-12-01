@@ -11,6 +11,7 @@ import { PostsComponent } from './posts/posts.component';
 import { DetailsComponent } from './details/details.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 import { RobotsComponent } from './robots/robots.component';
 import { RobotDetailsComponent } from './robot-details/robot-details.component';
 
@@ -21,6 +22,7 @@ import { RobotDetailsComponent } from './robot-details/robot-details.component';
     PostsComponent,
     LoginComponent,
     DetailsComponent,
+    NavbarComponent,
     RobotsComponent,
     RobotDetailsComponent
   ],

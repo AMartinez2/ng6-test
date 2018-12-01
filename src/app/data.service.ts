@@ -19,6 +19,6 @@ export class DataService {
     return this.http.get('https://robot-ms.herokuapp.com/name/' + name);
   }
   getPosts() {
-    return this.http.get('https://jsonplaceholder.typicode.com/posts');
+    return this.http.get('https://robot-ms.herokuapp.com/allRobots');
   }
 }
