@@ -6,9 +6,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { PostsComponent } from './posts/posts.component';
-import { DetailsComponent } from './details/details.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -19,10 +16,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
-    PostsComponent,
     LoginComponent,
-    DetailsComponent,
     NavbarComponent,
     RobotsComponent,
     RobotDetailsComponent,
