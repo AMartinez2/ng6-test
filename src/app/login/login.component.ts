@@ -1,6 +1,7 @@
+import { NavbarService } from './../navbar.service';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,10 @@ export class LoginComponent implements OnInit {
   users$: Object;
   constructor(
     private dataService: DataService,
-    private router: Router) {
+    private router: Router,
+    private navbar: NavbarService) {
+    // Hide the navbar
+    navbar.hide();
     // Get all users
     this.dataService.getAllUsers().subscribe(
       data => {

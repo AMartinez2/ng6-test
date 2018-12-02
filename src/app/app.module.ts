@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RobotsComponent } from './robots/robots.component';
 import { RobotDetailsComponent } from './robot-details/robot-details.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RobotDetailsComponent } from './robot-details/robot-details.component';
     DetailsComponent,
     NavbarComponent,
     RobotsComponent,
-    RobotDetailsComponent
+    RobotDetailsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
